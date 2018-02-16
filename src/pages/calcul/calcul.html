@@ -1,0 +1,26 @@
+<ion-content class="background" padding >
+ 
+    <ion-card>
+      <ion-card-content>
+      <ion-list >
+            <div padding>
+              <h1 class="tittle" >{{calculModel._calculPropose}}</h1>
+            </div>
+          
+          </ion-list>
+          <div padding>
+              <ion-item>
+                  <ion-input [(ngModel)]="Reponse" type="number" min=0 placeholder="Votre reponse ici"></ion-input>
+                </ion-item>
+                <table>
+            <th> <p (tap)="prev()"><img src="../../assets/button/prev.png"  /> </p> </th>
+            <th> <p (tap)="valider(calculModel._reponse,calculModel._points)"><img src="../../assets/button/valider.png"  /> </p> </th>
+            <th> <p (tap)="next()"><img src="../../assets/button/next.png"  /> </p> </th>
+          </table>
+          </div>  
+        <div padding>
+            <p class="quitter" (tap)="menuPrincipale()"><img src="../../assets/button/quitter.png"  /></p>
+          </div>
+        </ion-card-content>
+        </ion-card>
+</ion-content>

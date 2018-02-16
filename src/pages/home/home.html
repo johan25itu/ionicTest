@@ -1,0 +1,22 @@
+<ion-content class="background" padding >
+  <ion-card>
+    <ion-card-content>
+    <ion-list >
+          <ion-item class="list">
+            <ion-input [(ngModel)]="Mail" type="text" placeholder="Saisissez votre mail"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input [(ngModel)]="Pass" type="password" placeholder="Saisissez votre mot de passe"></ion-input>
+          </ion-item>
+        
+        </ion-list>
+        <div padding>
+        <button (tap)="login()" ion-button outline block>Jouer</button>
+      </div>  
+      <div padding>
+          <button (tap)="create()" ion-button outline block >Creer un nouveau compte</button>
+        </div>
+      </ion-card-content>
+      </ion-card>
+</ion-content>

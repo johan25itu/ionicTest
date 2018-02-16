@@ -1,0 +1,29 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>Fiche d'inscription</ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+          <ion-list>
+              <ion-item>
+                  <ion-label>Votre nom</ion-label>
+                  <ion-input [(ngModel)]="Nom" type="text"></ion-input>
+                </ion-item>
+      
+                <ion-item>
+                  <ion-label>Votre mail</ion-label>
+                  <ion-input [(ngModel)]="Mail" type="text"></ion-input>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label>Votre mot de passe</ion-label>
+                  <ion-input [(ngModel)]="Pass" type="password"></ion-input>
+                </ion-item>
+              
+              </ion-list>
+              <div padding>
+                    <button (tap)="create()" ion-button outline block >S'inscrire</button>
+                  </div>
+          </ion-content>
+           

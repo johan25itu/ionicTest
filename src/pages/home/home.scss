@@ -1,0 +1,43 @@
+page-home{
+.background
+{
+    background-image: url('../assets/imgs/home.png');
+    background-size: cover;
+    margin: 0;
+}
+.scroll-content{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+ion-card.card{
+    margin-top: 103px;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.item{
+    margin-bottom: 10px;
+    background: rgba(42, 28, 128, 0.5);
+    border: medium none;
+
+    .text-input,{
+        color: #fff;
+    }
+    input::-moz-placeholder{
+        color: #fff!important;
+    }
+    input::-moz-placeholder{
+        color: #fff!important;
+    }
+    *::-webkit-input-placeholder{
+        color: rgba(255, 255, 255, 0.5)!important;
+    }
+    *:-webkit-input-placeholder{
+        color: #fff!important;
+    }
+    *:-moz-placeholder{
+        color: #fff!important;
+    }
+}
+}
